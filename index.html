@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio febrina</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="nav-container">
+    <div class="logo-icon"></div>
+    <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#our-profile">Our Profile</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#message-us">Message Us</a>
+    </nav>
+</header>
+<hr>
+<main>
+<!-- ini home konten-->
+ <section id="home">
+    <header>
+        <div class="banner-container">
+            <h1>hi  <span id="name">-</span> welcome to my website</h1>
+        <article>
+            this is my portofolio:)
+            <script src="js/index.js"></script>
+          
+            <div class="slideshow-container">
+                <img class="img-slideshow" src="gambar/i.jpeg" />
+                <img class="img-slideshow" src="gambar/o.jpeg" />
+                <img class="img-slideshow" src="gambar/th.jpeg" />
+                <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+                <a class="next" onclick="nextslide(1)">&#10095;</a>
+            </div>
+            </div>
+        </article>
+    </header>
+</section>
+<hr>
+ <!--ini our portofolio content-->
+ <section id="our-profile">
+    <header>
+        <h1>our profile</h1>
+    </header>
+    <article class="profile-content">
+    <div>
+        <div class="profile-item profile-1"></div>
+        <p>profile 1</p>
+    </div>
+    <div>
+        <div class="profile-item profile-2"></div>
+        <p>profile 2</p>
+    </div>
+    <div>
+        <div class="profile-item profile-3"></div>
+        <p>profile 3</p>
+    </div>
+
+    </article>
+    <div class="divider"></div>
+ </section>
+ <hr>
+ <section id="message-us">
+    <header>
+        <h1>Message Us</h1>
+    </header>
+    <article>
+        <div class="validateform">
+    <form class="form" onsubmit="return validateForm()">
+        <label for="name-input">Nama:</label>
+        <input id="name-input" name="name-input" type="text">
+        <span id="error-name" class="error"></span>
+        <br>
+        <label for="tanggal-lahir">Tanggal Lahir:</label>
+        <input id="tanggal-lahir" name="tanggal-lahir" type="date">
+        <br>
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki_laki">
+            <label for="laki_laki">Laki-laki</label>
+        </div>
+        <br>
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result">
+        <h2>Result:</h2>
+        <p><strong>Nama:</strong> <span id="name"></span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="sender-birth-date"></span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="sender-gender"></span></p>
+        <p><strong>Pesan:</strong> <span id="sender-messages"></span></p>
+    </div>
+         
+ </section>
+  <!--ini  portofolio content-->
+  <!-- ini message us content-->
+   <hr>
+   <footer class="footer">
+    <p>created by Febrina Elisabeth Sihombing</p>
+</footer>
+
+</main>
+</body>
+</html>
